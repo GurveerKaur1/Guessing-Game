@@ -73,8 +73,9 @@ function isNumber(str){
 }
 
 //Adding an event listener
+let number = Math.floor((Math.random() * 10) +1);  
 onEvent('click', btn, function(){
-    let number = Math.floor((Math.random() * 10) +1);  
+   
  let a = first.value;
  --iterations.value;
  if( a == number && isNumber(a) ){
