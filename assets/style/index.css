@@ -9,7 +9,7 @@
     }
      
     body {
-    background-color:var(--app-dark-bg);
+    background-color:lightcoral;
     }
     .container {
         width:min(100%-30px, 1280px);
@@ -83,15 +83,15 @@ input[type="button"] {
     width: 120px;
     height: 46px;
     text-align: center;
-    background-color: var(--app-blue);
-    border: 1px solid var(--app-blue);
+    background-color: #fff;
+    border: 1px solid #fff;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.2px;
     transition: all 0.25s ease-in-out;
-    color: #fff;
+    color:lightcoral;
     cursor: pointer;
   }
 
@@ -115,7 +115,7 @@ input[type="button"] {
   
    
   
- .one {
+ .one , .msg{
     font-size: 17px;
     font-weight: 400;
     color: #f2f4f6;
@@ -147,4 +147,14 @@ input[type="button"] {
 
   .block{
     display: block;
+  }
+
+  .reset {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .msg {
+    display:none;
   }
