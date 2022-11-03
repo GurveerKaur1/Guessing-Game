@@ -37,6 +37,10 @@ const msg = select('.msg');
 
 
 btn1.addEventListener('click', () =>{
+    let b= iterations.value;
+    if(b== "" || isNaN(b)){
+        msg.style.display = 'block';
+    }else{
     numberOne.classList ='block';
     form1.style.display = 'none';
    
@@ -44,7 +48,7 @@ btn1.addEventListener('click', () =>{
     reset.style.display='block';
     rangeLimit.innerHTML = range.value;
 
-});
+}});
 
 
 reset.addEventListener('click', ()=>{
