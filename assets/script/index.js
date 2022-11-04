@@ -38,7 +38,7 @@ const msg = select('.msg');
 
 btn1.addEventListener('click', () =>{
     let b= iterations.value;
-    if(b== "" || isNaN(b)){
+    if(b== "" || isNaN(b) || b > 10){
         msg.style.display = 'block';
     }else{
     numberOne.classList ='block';
