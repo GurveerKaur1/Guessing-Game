@@ -25,13 +25,13 @@ section{
 h2 {
   font-size: 24px;
   color:lightcoral;
-  margin-left: 30%;
+  margin-left: 35%;
   margin-top: 50px;
 }
         
 p{
   font-size: 20px;
-  margin-left: 30px;
+  margin-left: 70px;
             
 }
 
@@ -146,6 +146,7 @@ p{
     cursor: default;
    /* visibility: hidden;
     opacity: 0;*/
+    margin-left: 30px;
   }
 
   .calc{
@@ -185,3 +186,6 @@ p{
 /*.get-result{
   margin-left: 38%;
 }*/
+.one{
+  margin-left: 30px;
+}
