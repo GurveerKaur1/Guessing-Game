@@ -73,7 +73,7 @@ function isNumber(str){
 }
 
 //Adding an event listener
-let number = Math.floor((Math.random() * 10) +1);  
+let number = Math.floor((Math.random() * 20) +1);  
 onEvent('click', btn, function(){
    
  let a = first.value;
@@ -84,25 +84,25 @@ onEvent('click', btn, function(){
     first.value = '';}
 else if ( iterations.value < 1
     ) {
-    output.innerText = `You are out of chances ` ;
+    output.innerText = `You are out of chances. My number was ${number}` ;
     first.value ='';
 
 }
  else{
     if(number < a &&  a <25 && isNumber(a) ){
-        output.innerText = `Enter lowest number  ${iterations.value} attempt left` ;
+        output.innerText = `Enter lowest number.  ${iterations.value} attempt left` ;
         first.value ='';
         
     }else
     if(number > a && isNumber(a)){
-        output.innerText = `Enter greater number ${iterations.value} attempt left`;
+        output.innerText = `Enter greater number. ${iterations.value} attempt left`;
         first.value ='';
     }
     else if( number < a && a > 25 && isNumber(a) ){
-        output.innerText = `Enter less than 25 ${iterations.value} attempt left`;
+        output.innerText = `Enter less than 25. ${iterations.value} attempt left`;
         first.value ='';}
         else{
-    output.innerText = `Enter valid numbers ${iterations.value} attempt left`  ;
+    output.innerText = `Enter valid numbers. ${iterations.value} attempt left`  ;
     first.value ='';
 }
 

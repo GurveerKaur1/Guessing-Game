@@ -9,7 +9,7 @@
     --app-blue-hover:#364ee6;
     }
 body {
-  background-color:lightcoral;
+  background-image: url(../img/bridge-gf02250d93_1920.jpg);
 }
 .container {
   width:min(100%-30px, 1280px);
@@ -24,8 +24,9 @@ section{
 }
 h2 {
   font-size: 24px;
-  color:#fff;
+  color:lightcoral;
   margin-left: 30%;
+  margin-top: 50px;
 }
         
 p{
@@ -34,8 +35,11 @@ p{
             
 }
 
-.calculator {
-  width: 360px;
+.container {
+  width: 600px;
+  height:400px;
+  background-color: #000;
+  border-radius: 8px;
   }
   main{
   margin-top: 100px;
@@ -46,8 +50,9 @@ p{
   
 form {
   margin-top: 20px;
-  width: 100%;
-  text-align: left;
+  margin-left: 40px;
+  width: 80%;
+  text-align: center;
 }
   
    
@@ -96,11 +101,11 @@ input[type="button"] {
     transition: all 0.25s ease-in-out;
     color:lightcoral;
     cursor: pointer;
-    place-items: center;
+    place-items: left;
 }
 
 p{
-    color:#fff;
+    color:lightcoral;
 }
 
 
@@ -111,9 +116,9 @@ p{
     padding: 0 15px;
     border-radius: 4px;
     background-color: rgb(0 0 0 / 0.2);
-    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2) inset, -1px -1px 1px 0 rgba(255, 255, 255, 0.1) inset;
+    /*box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2) inset, -1px -1px 1px 0 rgba(255, 255, 255, 0.1) inset;*/
     text-align: left;
-    margin-left: 0px;
+    margin-left: 50px;
      
   }
   
@@ -131,7 +136,7 @@ p{
 
 .three{
   font-size: 22px;
-  margin-left: 80px;
+  margin-left: 20px;
 }
 .two {
     font-size: 17px;
@@ -167,7 +172,7 @@ p{
 }
   .msg {
     display:none;
-    margin-left: 25%;
+    margin-left: '';
   }
 
 .game{
@@ -175,8 +180,8 @@ p{
 }
 
 #start{
-  margin-left: 35%;
+  margin-left: 5%;
 }
-.get-result{
+/*.get-result{
   margin-left: 38%;
-}
+}*/
