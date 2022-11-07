@@ -33,6 +33,8 @@ const reset = select('.reset');
 const rangeLimit= document.getElementById('rangeLimit');
 const iterations= document.getElementById('iter')
 const msg = select('.msg');
+const reset2 = select('.reset2')
+const game2 = select('.game');
 
 
 
@@ -45,7 +47,7 @@ btn1.addEventListener('click', () =>{
     form1.style.display = 'none';
    
     btn1.style.display="none";
-    reset.style.display='block';
+    reset2.style.display='block';
     rangeLimit.innerHTML = range.value;
 
 }});
@@ -80,13 +82,17 @@ onEvent('click', btn, function(){
  --iterations.value;
  if( a == number && isNumber(a) ){
     output.innerText ='';
-    output2.innerText = `congratulations you won `; 
-    first.value = '';}
+    output2.innerText = `congratulations you won`; 
+    first.value = '';
+    reset.style.display='block';
+    reset2.style.display='none';
+}
 else if ( iterations.value < 1
     ) {
     output.innerText = `You are out of chances. My number was ${number}` ;
-    first.value ='';
-
+    first.value =''
+    reset.style.display='block';
+    reset2.style.display='none';
 }
  else{
     if(number < a &&  a <25 && isNumber(a) ){
@@ -106,7 +112,8 @@ else if ( iterations.value < 1
     first.value ='';
 }
 
-}});
+}}
+);
 
 
 
