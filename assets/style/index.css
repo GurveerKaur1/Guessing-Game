@@ -10,47 +10,71 @@
     }
 body {
   background-image: url(../img/bridge-gf02250d93_1920.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.container {
+
+
+/*.container {
   width:min(100%-30px, 1280px);
   margin-inline:auto;
-}
+}*/
            
 main{
-  padding:60px;
+  /* padding:60px; */
 }
 section{
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 h2 {
   font-size: 24px;
   color:lightcoral;
-  margin-left: 35%;
-  margin-top: 50px;
+  /* margin-left: 35%;
+  margin-top: 50px; */
 }
         
 p{
-  font-size: 20px;
-  margin-left: 70px;
+  font-size: 18px;
+  /* margin-left: 70px; */
             
 }
 
 .container {
-  width: 600px;
+  width: 400px;
   height:400px;
   background-color: #000;
   border-radius: 8px;
+  
   }
   main{
-  margin-top: 100px;
+    display:grid;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  }
+  .calculator{
+  /* margin-top: 100px; */
   display:grid;
   place-items: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* gap: 20px; */
+  /* height: 100vh; */
 }
-   
+  
+.center{
+   display:grid;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
   
 form {
-  margin-top: 20px;
-  margin-left: 40px;
+  /* margin-top: 20px;
+  margin-left: 40px; */
   width: 80%;
   text-align: center;
 }
@@ -58,9 +82,9 @@ form {
    
   
 input[type="text"] {
-  width: 100%;
-  height: 48px;
-  padding: 0 15px;
+  width: 240px;
+  height: 40px;
+  /* padding: 0 15px; */
   border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
@@ -74,7 +98,7 @@ input[type="text"] {
    
   
 form input + input {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
   
    
@@ -89,7 +113,7 @@ input:focus {
 
 input[type="button"] {
     width: 120px;
-    height: 46px;
+    height: 40px;
     text-align: center;
     background-color: #fff;
     border: 1px solid #fff;
@@ -111,14 +135,14 @@ p{
 
 
   .output {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     height: 52px;
     padding: 0 15px;
     border-radius: 4px;
     background-color: rgb(0 0 0 / 0.2);
     /*box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2) inset, -1px -1px 1px 0 rgba(255, 255, 255, 0.1) inset;*/
-    text-align: left;
-    margin-left: 50px;
+    /* text-align: left; */
+    /* margin-left: 50px; */
      
   }
   
@@ -136,7 +160,7 @@ p{
 
 .three{
   font-size: 22px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 .two {
     font-size: 17px;
@@ -146,12 +170,13 @@ p{
     cursor: default;
    /* visibility: hidden;
     opacity: 0;*/
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
 
   .calc{
     visibility: hidden;
     opacity:0;
+    
   }
 
   #reset{
@@ -174,7 +199,7 @@ p{
     right: 40px;
     bottom: 40px;
   }
-.msg{
+.msg, .lets{
     font-size: 22px;
     color:red;
 }
@@ -186,21 +211,33 @@ p{
 .game{
   place-items: center;
 }
+.output{
+  /* text-align: center; */
+ 
+ 
+}
 
+.output p{
+  font-size: 16px;
+  color: red
+}
 #start{
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 /*.get-result{
   margin-left: 38%;
 }*/
 .one{
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 .game2{
   animation:shake 2.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
 }
 
+.first{
+  margin-bottom: 20px;
+}
 /*@keyframes shake{
  10%, 90% { transform: translate3d(-4px, 0, 0);}
  20%, 80% { transform: translate3d(2px, 0, 0);}
@@ -212,5 +249,59 @@ p{
   0%, 100% {transform: translateX(0);} 
   10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
   20%, 40%, 60%, 80% {transform: translateX(10px);} 
+}
+
+@media (max-width:700px){
+  h2{
+      font-size: 18px;
+  }
+  .row{
+      display: inline;
+  }
+  .container{
+    width: 500px;
+    height: 600px;
+    /* margin-right: 20px; */
+    margin-left: 0;
+  }
+}
+
+
+@media (max-width:600px){
+  h2{
+      font-size: 16px;
+  }
+  .row{
+      display: inline;
+  }
+ .container{ margin-left: 0px;
+}
+
+
+  
+}
+
+@media (max-width:390px){
+  h2{
+      font-size: 12px;
+  }
+  .row{
+      display: inline;
+  }
+ .container{ margin-left: 0px;
+}
+.text, .msg{
+  font-size: 18px;
+}
+
+.container{
+  width: 300px;
+  height: 400px;
+  /* margin-right: 20px; */
+  margin-left: 0;
+}
+
+
+  
 }
 
