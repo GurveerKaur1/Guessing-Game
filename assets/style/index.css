@@ -10,22 +10,14 @@
     }
 body {
   background-image: url(../img/bridge-gf02250d93_1920.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 
-/*.container {
-  width:min(100%-30px, 1280px);
-  margin-inline:auto;
-}*/
            
-main{
-  /* padding:60px; */
-}
-section{
-  /* margin-top: 60px; */
-}
+
 h2 {
   font-size: 24px;
   color:lightcoral;
